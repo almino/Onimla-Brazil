@@ -44,7 +44,6 @@ class Estados extends Select {
      */
     public function __construct($name, $id = FALSE, $siglas = FALSE) {
         parent::__construct($name, $siglas ? static::$options : array_values(static::$options));
-
         $this->id($id);
     }
 
